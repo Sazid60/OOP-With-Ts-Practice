@@ -23,3 +23,7 @@ export class Product {
     return this.price * this.quantity;
   }
 }
+
+const obj = new Product(1, "notun", 9, 9999);
+
+console.log(obj);
