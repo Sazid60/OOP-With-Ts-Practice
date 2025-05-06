@@ -12,7 +12,7 @@ export class Product {
     this.id = id;
     this.name = name;
     this.price = price;
-    this.quantity = price;
+    this.quantity = quantity;
   }
 
   getDetails(): string {

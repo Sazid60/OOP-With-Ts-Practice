@@ -12,3 +12,5 @@ const sampleProduct2 = new DigitalProduct(1, "Demo-Product", 20, 50, 26);
 console.log(sampleProduct2.getDetails());
 console.log(sampleProduct2.getDownloadInfo());
 console.log(sampleProduct2.getStockValue());
+
+console.log(sampleProduct2.sell(60));

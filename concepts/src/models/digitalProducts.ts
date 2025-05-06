@@ -18,4 +18,14 @@ export class DigitalProduct extends Product {
   getDownloadInfo(): string {
     return `${this.name} is Downloading. Size: ${this.downloadSizeInMB}`;
   }
+
+  sell(unit: number): string {
+    if (unit > this.quantity) {
+      return `Bhai! Product Sesh. Pre Order Den Parale`;
+    } else {
+      this.quantity -= unit;
+    }
+
+    return `${this.name} have been sold ${unit} units `;
+  }
 }
